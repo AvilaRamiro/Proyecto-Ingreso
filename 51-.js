@@ -69,3 +69,48 @@ if (numero1 > numero2){
 //55. Crea una variable llamada `color` y asígnale el nombre de un color. Utiliza una serie 
 //de declaraciones `if...else if` para determinar si el color es "Rojo," "Verde," o "Azul," y 
 //muestra un mensaje correspondiente en la consola
+
+let color = 'Azul'
+
+if (color === "Rojo") {
+    console.log("El color es Rojo");
+} else if (color === "Verde") {
+    console.log("El color es Verde");
+} else if (color === "Azul") {
+    console.log("El color es Azul");
+} else {
+    console.log("El color no es Rojo, Verde ni Azul");
+}
+
+//56. Crea una variable llamada `calificacion` y asígnale un valor numérico entre 0 y 100. Utiliza
+//una estructura condicional `if...else if...else` para mostrar en la consola si la 
+//calificación es "Excelente," "Aprobado," o "Reprobado" según un rango de calificaciones.
+
+let calificacion = 100;
+
+if (calificacion>100){
+    console.log('La calificacion debe ser de un rango entre 0 y 100');
+} else if (calificacion>=90){
+    console.log('Excelente');
+} else if (calificacion>=60) {
+    console.log('Aprobado');
+} else {
+    console.log('Reprobado');
+}
+
+//57. Define una variable `numero` y verifica si es positivo, negativo o igual a cero
+//utilizando una declaración `if` y muestra el resultado en la consola
+
+let numero = -539
+
+if (numero>0){
+    console.log('El número es positivo');
+} else if (numero===0){
+    console.log('El número es igual a 0');
+} else {
+    console.log('El número es negativo');
+}
+
+//58. Escribe una función llamada `esPar` que tome un número como argumento y retorne 
+//`true` si es par o `false` si es impar. Luego, muestra el resultado en la consola
+
