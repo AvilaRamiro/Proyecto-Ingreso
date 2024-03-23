@@ -55,8 +55,8 @@ switch (diaSemana){
 //54. Define dos variables, `numero1` y `numero2`, y realiza una comparación para determinar
 //cuál de los dos números es mayor. Luego, muestra el número mayor en la consola.
 
-let numero1 = 3;
-let numero2 = 24;
+let numero1 = parseFloat(prompt('Ingrese el primer número'));
+let numero2 = parseFloat(prompt('Ingrese el segundo número'));
 
 if (numero1 > numero2){
     console.log('El valor guardado en numero1 (', numero1, ') es mayor que el numero2 (', numero2, ')');
@@ -114,3 +114,57 @@ if (numero>0){
 //58. Escribe una función llamada `esPar` que tome un número como argumento y retorne 
 //`true` si es par o `false` si es impar. Luego, muestra el resultado en la consola
 
+function esPar(numeroAEvaluar) {
+
+    let resto = numeroAEvaluar % 2;
+    
+    return resto == 0;
+}
+
+let numeroAEvaluar = prompt('Indica el número a evaluar');
+
+console.log('El número ingresado ', esPar(numeroAEvaluar) ? 'es par' : 'es impar');
+
+//59. Crea una variable `hora` y asígnale una hora en formato de 24 horas. Escribe una 
+//estructura condicional para mostrar "Buenos días", "Buenas tardes" o "Buenas noches" en 
+//función de la hora.
+
+let hora =25
+
+if (hora > 5 && hora < 13){
+
+    console.log('Buenos dias!')
+
+} else if (hora > 12 && hora < 21){
+
+    console.log('Buenas tardes!')
+
+} else if ((hora > 20 && hora < 25) || (hora < 6 && hora > -1)){
+
+    console.log('Buenas noches!')
+
+} else{
+    console.log('El número no corresponde a una hora del día')
+}
+
+//60. Define tres variables `lado1`, `lado2` y `lado3` que representen las longitudes
+//de los lados de un triángulo. Escribe una estructura condicional para determinar si 
+//el triángulo es equilátero (todos los lados iguales), isósceles (dos lados iguales),
+//o escaleno (ningún lado igual)
+
+let lado1 = 6;
+let lado2 = 5;
+let lado3 = 2;
+
+if (lado1 === lado2 && lado2 === lado3){
+
+    console.log('El triangulo es equilatero');
+
+} else if ((lado1 === lado2)||(lado1 === lado3)||(lado2 === lado3)){
+
+    console.log ('El triangulo es isosceles');
+
+} else {
+
+    console.log('El triangulo es escaleno');
+}
